@@ -1,0 +1,100 @@
+* 
+{
+    padding:0;
+    margin:0;
+}
+
+body {
+background-image:url("rasm.jpg");
+background-size: cover;
+background-position: center;
+box-sizing: border-box;
+font-size: sans-serif;
+}
+
+.menyu-bar
+{
+background :rgb(0, 100, 0);
+text-align:center;
+}
+
+.menyu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color:#fff
+}
+
+.menyu-bar ul li
+{
+    width:120px;
+    margin:10px;
+    padding:15px;
+}
+.menyu-bar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.active,.menyu-bar ul li:hover
+{
+    background: rgb(19, 184, 19) ;
+    border-radius: 3px;
+}
+.menyu-bar .fa
+{
+    margin-right: 8px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menyu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+
+
+}
+.menyu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menyu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+.menyu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menyu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: #b2ff00;
+}
+.fa-angle-right
+{
+    float:rigth;
+}
+.sub-menu-2
+{
+    display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgb(0,100,0);
+}
